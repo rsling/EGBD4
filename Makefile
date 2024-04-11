@@ -9,14 +9,14 @@ complete: index egbd4.pdf
 index:  egbd4.snd
  
 egbd4.pdf: egbd4.aux
-	xelatex egbd4 
+	xelatex --shell-escape egbd4 
 
 egbd4.aux: $(SOURCE)
-	xelatex -no-pdf egbd4 
+	xelatex --shell-escape -no-pdf egbd4 
 
 #create only the book
 egbd4.bbl:  $(SOURCE) localbibliography.bib  
-	xelatex -no-pdf egbd4 
+	xelatex --shell-escape -no-pdf egbd4 
 	biber   egbd4 
 
 
@@ -45,7 +45,7 @@ egbd4.snd: egbd4.bbl
 	makeindex -o egbd4.snd egbd4.sdx 
 	echo "check for doublets in name index"
 	grep -o  ", [^0-9, \\}]*," egbd4.and|sed "s/, //" | sed "s/,\$//"
-	xelatex egbd4 
+	xelatex --shell-escape egbd4 
  
 
 #create a png of the cover

@@ -352,15 +352,34 @@ Die restlichen Werte werden gemäß der Position im Paradigma bei den konkret vo
     tier=preterminal
     },
   tt/.style={tier=terminal},
-}
-
-
-
-%%%%%%%%%%
-% forest %
-%%%%%%%%%%
-
-\forestset{
   narroof/.style={roof, inner xsep=-0.25em, rounded corners},
 }
+
+
+\forestset{
+  %Ephr/.style={draw, circle, thick, inner sep=1pt},
+  Ephr/.style={fill=gray, inner sep=3pt,
+    delay={content=\whyte{##1}}},
+  Eobl/.style={draw, inner sep=3pt},
+  Eopt/.style={draw, densely dashed, inner sep=3pt},
+  Erec/.style={draw, double, inner sep=3pt},
+  Eoptrec/.style={draw, densely dashed, double, inner sep=3pt},
+  Ehd/.style={fill=gray, inner sep=3pt,
+    delay={content=\whyte{##1}}
+  },
+  Emult/.style={for children={no edge}, for tree={l sep=0pt}},
+  phrasenschema/.style={for tree={l sep=2em, s sep=2em}},
+  decide/.style={draw, rectangle, inner sep=5pt},
+  finall/.style={rounded corners, fill=lsLightGray, text=black},
+  intrme/.style={draw, rounded corners},
+  yes/.style={edge label={node[near end, above, sloped, font=\scriptsize]{Ja}}},
+  no/.style={edge label={node[near end, above, sloped, font=\scriptsize]{Nein}}},
+  sake/.style={tier=preterminal},
+  ake/.style={
+    tier=preterminal
+    },
+  tt/.style={tier=terminal},
+  narroof/.style={roof, inner xsep=-0.25em, rounded corners},
+}
+
 
