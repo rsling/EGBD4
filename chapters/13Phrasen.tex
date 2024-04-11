@@ -19,28 +19,28 @@ In Abschnitt~\ref{sec:konstruktionvonkonstituentenanalysen} wird zum Schluss die
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [PP, calign=first
-      [\textbf{P}, tier=preterminal
-        [\it für]
+    [PP
+      [\textbf{P}
+        [\it für, tt]
       ]
-      [NP, calign=last
-        [Art, tier=preterminal
-          [\it einen]
+      [NP
+        [Art
+          [\it einen, tt]
         ]
-        [\textbf{N}, tier=preterminal
-          [\it Keks]
+        [\textbf{N}
+          [\it Keks, tt]
         ]
       ]
     ]
   \end{forest}\\
   \vspace{\baselineskip}
   \begin{forest}
-    [PP, calign=first
-      [\textbf{P}, tier=preterminal
-        [\it für]
+    [PP
+      [\textbf{P}
+        [\it für, tt]
       ]
-      [NP, tier=preterminal
-        [\it einen Keks, narroof]
+      [NP
+        [\it einen Keks, narroof, tt]
       ]
     ]
   \end{forest}
@@ -110,15 +110,15 @@ Die koordinierten Teilstrukturen werden an dieser Stelle dabei jeweils nicht wei
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [\textbf{N}, calign=child, calign child=2
-      [\textbf{N}, tier=preterminal
-        [\it Kuchen]
+    [\textbf{N}
+      [\textbf{N}
+        [\it Kuchen, tt]
       ]
-      [Konj, tier=preterminal
-        [\it und]
+      [Konj
+        [\it und, tt]
       ]
-      [\textbf{N}, tier=preterminal
-        [\it Sahne]
+      [\textbf{N}
+        [\it Sahne, tt]
       ]
     ]
   \end{forest}
@@ -129,15 +129,15 @@ Die koordinierten Teilstrukturen werden an dieser Stelle dabei jeweils nicht wei
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [S, calign=child, calign child=2
-      [S, tier=preterminal
-        [\it Es ist Sonntag, narroof]
+    [S
+      [S
+        [\it Es ist Sonntag, narroof, tt]
       ]
-      [Konj, tier=preterminal
-        [\it und]
+      [Konj
+        [\it und, tt]
       ]
-      [S, tier=preterminal
-        [\it die Zeit wird knapp, narroof]
+      [S
+        [\it die Zeit wird knapp, narroof, tt]
       ]
     ]
   \end{forest}
@@ -148,15 +148,15 @@ Die koordinierten Teilstrukturen werden an dieser Stelle dabei jeweils nicht wei
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [\textbf{P}, calign=child, calign child=2
-      [\textbf{P}, tier=preterminal
-        [\it auf]
+    [\textbf{P}
+      [\textbf{P}
+        [\it auf, tt]
       ]
-      [Konj, tier=preterminal
-        [\it oder]
+      [Konj
+        [\it oder, tt]
       ]
-      [\textbf{P}, tier=preterminal
-        [\it neben]
+      [\textbf{P}
+        [\it neben, tt]
       ]
     ]
   \end{forest}
@@ -250,7 +250,7 @@ Zu eventuell nicht bekannten Bezeichnungen wie \textit{Kard} wird weiter unten m
   \centering
   \begin{forest}
     phrasenschema
-    [NP, Ephr, calign=child, calign child=4
+    [NP, Ephr
       [Art, Eopt, Emult, [NP\Sub{Genitiv}, Eopt]]
       [Kard, Eopt]
       [AP, Eopt, Erec]
@@ -307,8 +307,8 @@ Im Bereich der inneren Rechtsattribute und der Relativsätze gibt es auch Einsch
   \centering
   \begin{forest}
     [NP
-      [\textbf{N}, tier=preterminal
-        [\it dieser]
+      [\textbf{N}
+        [\it dieser, tt]
       ]
     ]
   \end{forest}
@@ -319,12 +319,12 @@ Im Bereich der inneren Rechtsattribute und der Relativsätze gibt es auch Einsch
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=first
-      [\textbf{N}, tier=preterminal
-        [\it einen]
+    [NP
+      [\textbf{N}
+        [\it einen, tt]
       ]
-      [PP, tier=preterminal
-        [\it mit Sahne, narroof]
+      [PP
+        [\it mit Sahne, narroof, tt]
       ]
     ]
   \end{forest}
@@ -343,8 +343,8 @@ Die Relativsätze werden später in Abschnitt~\ref{sec:relativsaetze} besprochen
   \centering
   \begin{forest}
     [NP
-      [\textbf{N}, tier=preterminal
-        [\it Zahnbürsten]
+      [\textbf{N}
+        [\it Zahnbürsten, tt]
       ]
     ]
   \end{forest}
@@ -364,18 +364,18 @@ Siehe auch Übung~\ref{exc:phrasen50}.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=last
+    [NP
       [Art
-        [\it die]
+        [\it die, tt]
       ]
       [Kard
-        [\it zwei]
+        [\it zwei, tt]
       ]
-      [AP, tier=preterminal
-        [\it tollen, narroof]
+      [AP
+        [\it tollen, narroof, tt]
       ]
-      [\textbf{N}, tier=preterminal
-        [\it Rückwärtssprünge]
+      [\textbf{N}
+        [\it Rückwärtssprünge, tt]
       ]
     ]
   \end{forest}
@@ -403,12 +403,12 @@ Da wir PP-Strukturen noch nicht beschrieben haben (s.\ Abschnitt~\ref{sec:praepo
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=first
-      [\textbf{N}, tier=preterminal
-        [\it Zahnbürsten]
+    [NP
+      [\textbf{N}
+        [\it Zahnbürsten, tt]
       ]
-      [PP, tier=preterminal
-        [\it vom König, narroof]
+      [PP
+        [\it vom König, narroof, tt]
       ]
     ]
   \end{forest}
@@ -419,11 +419,11 @@ Da wir PP-Strukturen noch nicht beschrieben haben (s.\ Abschnitt~\ref{sec:praepo
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=first
-      [\textbf{N}, tier=preterminal
-        [\it Zahnbürsten]
+    [NP
+      [\textbf{N}
+        [\it Zahnbürsten, tt]
       ]
-      [NP, tier=preterminal
+      [NP
         [\it des Königs, narroof
         ]
       ]
@@ -452,15 +452,15 @@ Neben der PP mit \textit{von} können aber viele andere Arten von PPs (und auch 
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=first
-      [\bf N, tier=preterminal
-        [\it Zahnbürsten]
+    [NP
+      [\bf N
+        [\it Zahnbürsten, tt]
       ]
-      [PP, tier=preterminal
-        [\it von Königen, narroof]
+      [PP
+        [\it von Königen, narroof, tt]
       ]
-      [PP, tier=preterminal
-        [\it aus Silber, narroof]
+      [PP
+        [\it aus Silber, narroof, tt]
       ]
     ]
   \end{forest}
@@ -550,18 +550,18 @@ Ausführliches zur Artikelposition folgt in Abschnitt~\ref{sec:adjektivphrasenun
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=child, calign child=2
-      [NP, tier=preterminal
-        [\it Sarahs, narroof]
+    [NP
+      [NP
+        [\it Sarahs, narroof, tt]
       ]
-      [\bf N, tier=preterminal
-        [\it Rettung]
+      [\bf N
+        [\it Rettung, tt]
       ]
-      [NP, tier=preterminal
-        [\it des Kuchens, narroof]
+      [NP
+        [\it des Kuchens, narroof, tt]
       ]
-      [PP, tier=preterminal
-        [\it vor dem Anbrennen, narroof]
+      [PP
+        [\it vor dem Anbrennen, narroof, tt]
       ]
     ]
   \end{forest}
@@ -682,15 +682,15 @@ Beide sind völlig unabhängig voneinander.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=child, calign child=2
-      [AP, tier=preterminal
-        [\it rote, narroof]
+    [NP
+      [AP
+        [\it rote, narroof, tt]
       ]
-      [\bf N, tier=preterminal
-        [\it Zahnbürsten]
+      [\bf N
+        [\it Zahnbürsten, tt]
       ]
-      [NP, tier=preterminal
-        [\it des Königs, narroof]
+      [NP
+        [\it des Königs, narroof, tt]
       ]
     ]
   \end{forest}
@@ -701,15 +701,15 @@ Beide sind völlig unabhängig voneinander.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=last
-      [AP, tier=preterminal
-        [\it freundliche, narroof]
+    [NP
+      [AP
+        [\it freundliche, narroof, tt]
       ]
-      [AP, tier=preterminal
-        [\it ehemalige, narroof]
+      [AP
+        [\it ehemalige, narroof, tt]
       ]
-      [\bf N, tier=preterminal
-        [\it Präsidenten]
+      [\bf N
+        [\it Präsidenten, tt]
       ]
     ]
   \end{forest}
@@ -725,20 +725,20 @@ Das Adjektiv \textit{ehemalig} wurde bewusst gegen \textit{nett} ausgetauscht.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=last
-      [AP, calign=child, calign child=2
-        [AP, tier=preterminal
-          [\it freundliche, narroof]
+    [NP
+      [AP
+        [AP
+          [\it freundliche, narroof, tt]
         ]
-        [Konj, tier=preterminal
+        [Konj
           [{,}]
         ]
-        [AP, tier=preterminal
-          [\it nette, narroof]
+        [AP
+          [\it nette, narroof, tt]
         ]
       ]
-      [\bf N, tier=preterminal
-        [\it Präsidenten]
+      [\bf N
+        [\it Präsidenten, tt]
       ]
     ]
   \end{forest}
@@ -774,21 +774,21 @@ Schließlich können optional noch Artikelwörter oder NPs im Genitiv ganz links
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=child, calign child=3
-      [Art, tier=preterminal
-        [\it die]
+    [NP
+      [Art
+        [\it die, tt]
       ]
-      [AP, tier=preterminal
-        [\it roten, narroof]
+      [AP
+        [\it roten, narroof, tt]
       ]
-      [\bf N, tier=preterminal
-        [\it Zahnbürsten]
+      [\bf N
+        [\it Zahnbürsten, tt]
       ]
-      [NP, tier=preterminal
-        [\it des Königs, narroof]
+      [NP
+        [\it des Königs, narroof, tt]
       ]
-      [RS, tier=preterminal
-        [\it die benutzt waren, narroof]
+      [RS
+        [\it die benutzt waren, narroof, tt]
       ]
     ]
   \end{forest}
@@ -805,12 +805,12 @@ Dank der Weglassbarkeit aller Teile der Phrase zwischen Artikel und Substantiv w
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [NP, calign=last
-      [Art, tier=preterminal
-        [\it einige]
+    [NP
+      [Art
+        [\it einige, tt]
       ]
-      [\bf N, tier=preterminal
-        [\it Zahnbürsten]
+      [\bf N
+        [\it Zahnbürsten, tt]
       ]
     ]
   \end{forest}
@@ -872,7 +872,7 @@ Welche Ergänzungen vorkommen, wird (im Sinn der Definition von Valenz und Rekti
   \centering
   \begin{forest}
     phrasenschema
-    [AP, Ephr, calign=last
+    [AP, Ephr
       [Modifizierer, Eopt, Erec, Emult [Ergänzungen, Eopt, Erec, name=Apergaenzi]]
       [Gradierungselement, Eopt]
       [A, Ehd]
@@ -927,15 +927,15 @@ Eine Modellierung, in der dieser Unterschied eine erkennbare Rolle spielt, würd
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [AP, calign=last
-      [PP, tier=preterminal
-        [\it seit dem Vortag, narroof]
+    [AP
+      [PP
+        [\it seit dem Vortag, narroof, tt]
       ]
-      [Ptkl, tier=preterminal
-        [\it sehr]
+      [Ptkl
+        [\it sehr, tt]
       ]
-      [\bf A, tier=preterminal
-        [\it angenehme]
+      [\bf A
+        [\it angenehme, tt]
       ]
     ]
   \end{forest}
@@ -966,12 +966,12 @@ In prädikativen APs sind die Stellungsmöglichkeiten etwas anders (Abschnitt~\r
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [AP, calign=last
-      [PP, tier=preterminal
-        [\it auf ihre Tochter, narroof, name=AufIhreTochter]
+    [AP
+      [PP
+        [\it auf ihre Tochter, narroof, name=AufIhreTochter, tt]
       ]
-      [\bf A, tier=preterminal
-        [\it stolze]
+      [\bf A
+        [\it stolze, tt]
         {\draw [->, bend left=30] (.south) to (AufIhreTochter);}
       ]
     ]
@@ -983,18 +983,18 @@ In prädikativen APs sind die Stellungsmöglichkeiten etwas anders (Abschnitt~\r
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [AP, calign=last
-      [PP, tier=preterminal
-        [\it seit dem Vortag, narroof]
+    [AP
+      [PP
+        [\it seit dem Vortag, narroof, tt]
       ]
-      [PP, tier=preterminal
-        [\it auf ihre Tochter, narroof, name=AufIhreTochter]
+      [PP
+        [\it auf ihre Tochter, narroof, name=AufIhreTochter, tt]
       ]
-      [Ptkl, tier=preterminal
-        [\it sehr]
+      [Ptkl
+        [\it sehr, tt]
       ]
-      [\bf A, tier=preterminal
-        [\it stolze]
+      [\bf A
+        [\it stolze, tt]
         {\draw [->, bend left=30] (.south) to (AufIhreTochter);}
       ]
     ]
@@ -1022,7 +1022,7 @@ Optionale Gradierungselemente stehen nach ihnen und damit immer direkt vor dem a
   \centering
   \begin{forest}
     phrasenschema
-    [PP, Ephr, calign=child, calign child=2
+    [PP, Ephr
       [Modifizierer, Eopt]
       [P, Ehd, name=Ppkopf]
       [NP, Eobl]
@@ -1049,15 +1049,15 @@ Einen Modifizierer in Form eines Adjektivs (\textit{weit}) zeigt (\ref{ex:normal
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [PP, calign=child, calign child=2
-      [NP, tier=preterminal
-        [\it einen Meter, narroof]
+    [PP
+      [NP
+        [\it einen Meter, narroof, tt]
       ]
-      [\bf P, tier=preterminal
-        [\it unter]
+      [\bf P
+        [\it unter, tt]
       ]
-      [NP, tier=preterminal
-        [\it der Erde, narroof]
+      [NP
+        [\it der Erde, narroof, tt]
       ]
     ]
   \end{forest}
@@ -1068,15 +1068,15 @@ Einen Modifizierer in Form eines Adjektivs (\textit{weit}) zeigt (\ref{ex:normal
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [PP, calign=child, calign child=2
-      [Ptkl, tier=preterminal
-        [\it weit]
+    [PP
+      [Ptkl
+        [\it weit, tt]
       ]
-      [\bf P, tier=preterminal
-        [\it über]
+      [\bf P
+        [\it über, tt]
       ]
-      [NP, tier=preterminal
-        [\it ihrem früheren Niveau, narroof]
+      [NP
+        [\it ihrem früheren Niveau, narroof, tt]
       ]
     ]
   \end{forest}
@@ -1098,12 +1098,12 @@ Für die postpositionale Variante s.\ auch Abbildung~\ref{fig:normalepp101}.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [PP, calign=last
-      [NP, tier=preterminal
-        [\it der Sprechstunde, narroof]
+    [PP
+      [NP
+        [\it der Sprechstunde, narroof, tt]
       ]
-      [\bf Psp, tier=preterminal
-        [\it wegen]
+      [\bf Psp
+        [\it wegen, tt]
       ]
     ]
   \end{forest}
@@ -1123,16 +1123,16 @@ Das sähe dann aus wie in Abbildung~\ref{fig:ppmitflektierbarenpraepositionen102
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [PP, calign=first
-      [\bf P, tier=preterminal
-        [\it zu]
+    [PP
+      [\bf P
+        [\it zu, tt]
       ]
-      [NP, calign=last
-        [Art, tier=preterminal
-          [\it 'm]
+      [NP
+        [Art
+          [\it 'm, tt]
         ]
-        [\bf N, tier=preterminal
-          [\it Training]
+        [\bf N
+          [\it Training, tt]
         ]
       ]
     ]
@@ -1151,13 +1151,13 @@ Wir entscheiden uns hier für die Variante, die nicht willkürlich Wörter in me
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [PP, calign=first
-      [\bf P, tier=preterminal
-        [\it zum]
+    [PP
+      [\bf P
+        [\it zum, tt]
       ]
       [NP
-      [\bf N, tier=preterminal
-        [\it Training]
+      [\bf N
+        [\it Training, tt]
       ]
     ]
     ]
@@ -1185,7 +1185,7 @@ Optional stehen Modifizierer vor der Präposition.
   \centering
   \begin{forest}
     phrasenschema
-    [AvP, Ephr, calign=last
+    [AvP, Ephr
       [Modifizierer, Eopt]
       [Av, Ehd]
     ]
@@ -1195,12 +1195,12 @@ Optional stehen Modifizierer vor der Präposition.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [AvP, calign=last
-      [Ptkl, tier=preterminal
-        [\it sehr]
+    [AvP
+      [Ptkl
+        [\it sehr, tt]
       ]
-      [\bf Av, tier=preterminal
-        [\it oft]
+      [\bf Av
+        [\it oft, tt]
       ]
     ]
   \end{forest}
@@ -1243,7 +1243,7 @@ AvPs sind ähnlich wie PPs strukturiert, nur dass Präpositionen immer eine obli
   \centering
   \begin{forest}
     phrasenschema
-    [SP, Ephr, calign=first
+    [SP, Ephr
       [S, Ehd, name=Kpkopf]
       [VP, Eobl]
       {\draw [bend left=45, <-] (.south) to (Kpkopf.south);}
@@ -1270,12 +1270,12 @@ Vgl.\ auch Abbildung~\ref{fig:subjunktionsphrase110}.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [SP, calign=first
-      [\bf K, tier=preterminal
-        [\it dass, name=Kpkopf]
+    [SP
+      [\bf K
+        [\it dass, name=Kpkopf, tt]
       ]
-      [VP, tier=preterminal
-        [\it der Kassenpatient geht, narroof]
+      [VP
+        [\it der Kassenpatient geht, narroof, tt]
       ]
     ]
   \end{forest}
@@ -1349,7 +1349,7 @@ Das ist sehr selten der Fall, zumindest aber in Imperativsätzen eine Möglichke
   \centering
   \begin{forest}
     phrasenschema
-    [VP, Ephr, calign=last
+    [VP, Ephr
       [Angaben, Emult, Eopt, Erec [Ergänzungen, Eopt, Emult, Erec, name=Vpergaenzi]]
       [V, Ehd]
       {\draw [->, bend left=90] (.south) to (Vpergaenzi.south);}
@@ -1369,12 +1369,12 @@ Das ist sehr selten der Fall, zumindest aber in Imperativsätzen eine Möglichke
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [VP, calign=last
-      [NP, tier=preterminal
-        [\it Ischariot, narroof]
+    [VP
+      [NP
+        [\it Ischariot, narroof, tt]
       ]
-      [\bf V, tier=preterminal
-        [\it malt]
+      [\bf V
+        [\it malt, tt]
       ]
     ]
   \end{forest}
@@ -1386,15 +1386,15 @@ Das ist sehr selten der Fall, zumindest aber in Imperativsätzen eine Möglichke
   \centering
   \begin{forest}
     l sep+=1em
-    [VP, calign=last
-      [NP, tier=preterminal
-        [\it Ischariot, narroof]
+    [VP
+      [NP
+        [\it Ischariot, narroof, tt]
       ]
-      [NP, tier=preterminal
-        [\it das Bild, narroof]
+      [NP
+        [\it das Bild, narroof, tt]
       ]
-      [\bf V, tier=preterminal
-        [\it malt]
+      [\bf V
+        [\it malt, tt]
       ]
     ]
   \end{forest}
@@ -1406,18 +1406,18 @@ Das ist sehr selten der Fall, zumindest aber in Imperativsätzen eine Möglichke
   \centering
   \begin{forest}
     l sep+=2em
-    [VP, calign=last
-      [NP, tier=preterminal
-        [\it Ischariot, narroof]
+    [VP
+      [NP
+        [\it Ischariot, narroof, tt]
       ]
-      [NP, tier=preterminal
-        [\it dem Arzt, narroof]
+      [NP
+        [\it dem Arzt, narroof, tt]
       ]
-      [NP, tier=preterminal
-        [\it das Bild, narroof]
+      [NP
+        [\it das Bild, narroof, tt]
       ]
-      [\bf V, tier=preterminal
-        [\it verkauft]
+      [\bf V
+        [\it verkauft, tt]
       ]
     ]
   \end{forest}
@@ -1429,27 +1429,27 @@ Das ist sehr selten der Fall, zumindest aber in Imperativsätzen eine Möglichke
   \centering
   \begin{forest}
     l sep+=3em
-    [VP, calign=last
-      [NP, tier=preterminal
-        [\it Ischariot, narroof]
+    [VP
+      [NP
+        [\it Ischariot, narroof, tt]
       ]
-      [AvP, tier=preterminal
-        [\it wahrscheinlich, narroof]
+      [AvP
+        [\it wahrscheinlich, narroof, tt]
       ]
-      [NP, tier=preterminal
-        [\it dem Arzt, narroof]
+      [NP
+        [\it dem Arzt, narroof, tt]
       ]
-      [AvP, tier=preterminal
-        [\it heimlich, narroof]
+      [AvP
+        [\it heimlich, narroof, tt]
       ]
-      [NP, tier=preterminal
-        [\it das Bild, narroof]
+      [NP
+        [\it das Bild, narroof, tt]
       ]
-      [AvP, tier=preterminal
-        [\it schnell, narroof]
+      [AvP
+        [\it schnell, narroof, tt]
       ]
-      [\bf V, tier=preterminal
-        [\it verkauft]
+      [\bf V
+        [\it verkauft, tt]
       ]
     ]
   \end{forest}
@@ -1520,7 +1520,7 @@ Die Indizes stellen sicher, dass die verschiedenen V auseinandergehalten werden 
   \centering
   \begin{forest}
     phrasenschema
-    [V\Sub{j+i}, Ephr, , calign=last
+    [V\Sub{j+i}, Ephr
       [V\Sub{j}, Eopt, name=Vkkopf]
       [V\Sub{i}, Ehd]
       {\draw [->, bend left=30] (.south) to (Vkkopf.south);}
@@ -1542,8 +1542,8 @@ Außerdem zeigen Pfeile die Rektionsbeziehungen an.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [\bf V, tier=preterminal
-      [\it isst]
+    [\bf V
+      [\it isst, tt]
     ]
   \end{forest}
   \caption{Maximal einfacher Verbkomplex}
@@ -1553,22 +1553,22 @@ Außerdem zeigen Pfeile die Rektionsbeziehungen an.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [\bf V\Sub{2+1}, calign=last
-      [\bf V\Sub{2}, tier=preterminal
-        [\it essen]
+    [\bf V\Sub{2+1}
+      [\bf V\Sub{2}
+        [\it essen, tt]
       ]
-      [\bf V\Sub{1}, tier=preterminal
-        [\it wird]
+      [\bf V\Sub{1}
+        [\it wird, tt]
         {\draw [->, bend left=30] (.south) to (!uu11.south);}
       ]
     ]
   \end{forest}\hspace{0.1\textwidth}\begin{forest}
-    [\bf V\Sub{2+1}, calign=last
-      [\bf V\Sub{2}, tier=preterminal
-        [\it gegessen]
+    [\bf V\Sub{2+1}
+      [\bf V\Sub{2}
+        [\it gegessen, tt]
       ]
-      [\bf V\Sub{1}, tier=preterminal
-        [\it wird]
+      [\bf V\Sub{1}
+        [\it wird, tt]
         {\draw [->, bend left=30] (.south) to (!uu11.south);}
       ]
     ]
@@ -1581,18 +1581,18 @@ Außerdem zeigen Pfeile die Rektionsbeziehungen an.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [\bf V\Sub{3+2+1}, calign=last
-      [\bf V\Sub{3+2}, calign=last
-        [\bf V\Sub{3}, tier=preterminal
-          [\it kaufen]
+    [\bf V\Sub{3+2+1}
+      [\bf V\Sub{3+2}
+        [\bf V\Sub{3}
+          [\it kaufen, tt]
         ]
-        [\bf V\Sub{2}, tier=preterminal
-          [\it wollen]
+        [\bf V\Sub{2}
+          [\it wollen, tt]
           {\draw [->, bend left=30] (.south) to (!uu11.south);}
         ]
       ]
-      [\bf V\Sub{1}, tier=preterminal
-        [\it wird]
+      [\bf V\Sub{1}
+        [\it wird, tt]
         {\draw [->, bend left=30] (.south) to (!uu121.south);}
       ]
     ]
@@ -1628,27 +1628,27 @@ Eine Analyse von (\ref{ex:verbkomplex125}), die die Rektionsbeziehungen des lexi
   \centering
   \begin{forest}
     l sep+=2em
-    [VP, calign=last
-      [NP, tier=preterminal
-        [\it die Freundin, narroof]
+    [VP
+      [NP
+        [\it die Freundin, narroof, tt]
       ]
-      [NP, tier=preterminal
-        [\it das Eis, narroof]
+      [NP
+        [\it das Eis, narroof, tt]
       ]
-      [\bf\Sub{3+2+1}, calign=last
-        [\bf V\Sub{3+2}, calign=last
-          [\bf V\Sub{3}, tier=preterminal
-            [\it kaufen]
+      [\bf\Sub{3+2+1}
+        [\bf V\Sub{3+2}
+          [\bf V\Sub{3}
+            [\it kaufen, tt]
             {\draw [->, bend left=30] (.south) to (!uuuu11.south);}
             {\draw [->, bend left=30] (.south) to (!uuuu21.south);}
           ]
-          [\bf V\Sub{2}, tier=preterminal
-            [\it wollen]
+          [\bf V\Sub{2}
+            [\it wollen, tt]
             {\draw [->, bend left=30] (.south) to (!uu11.south);}
           ]
         ]
-        [\bf V\Sub{1}, tier=preterminal
-          [\it wird]
+        [\bf V\Sub{1}
+          [\it wird, tt]
           {\draw [->, bend left=30] (.south) to (!uu121.south);}
         ]
       ]
@@ -1697,14 +1697,14 @@ Zunächst wird gemäß Punkt~\ref{it:konstruktionvonkonstituentenanalysen131} au
   \centering
   \begin{forest}
     [, phantom, s sep=1em
-      [\bf K, tier=preterminal [\it dass]]
-      [\bf N, tier=preterminal [\it Frida]]
-      [Art, tier=preterminal [\it den]]
-      [\bf A, tier=preterminal [\it heißen]]
-      [\bf N, tier=preterminal [\it Kaffee]]
-      [\bf Av, tier=preterminal [\it gerne]]
-      [\bf V, tier=preterminal [\it trinken]]
-      [\bf V, tier=preterminal [\it möchte]]
+      [\bf K [\it dass, tt]]
+      [\bf N [\it Frida, tt]]
+      [Art [\it den, tt]]
+      [\bf A [\it heißen, tt]]
+      [\bf N [\it Kaffee, tt]]
+      [\bf Av [\it gerne, tt]]
+      [\bf V [\it trinken, tt]]
+      [\bf V [\it möchte, tt]]
     ]
   \end{forest}
   \caption{Konstruktion einer syntaktischen Analyse, Schritt 1}
@@ -1723,20 +1723,20 @@ Eine ähnliche Schlussfolgerung kann für das Adverb \textit{gerne} getroffen we
   \centering
   \begin{forest}
     [, phantom, s sep=1em
-      [\bf K, tier=preterminal [\it dass]]
+      [\bf K [\it dass, tt]]
       [NP
-        [\bf N, tier=preterminal [\it Frida]]
+        [\bf N [\it Frida, tt]]
       ]
-      [Art, tier=preterminal [\it den]]
+      [Art [\it den, tt]]
       [AP
-        [\bf A, tier=preterminal [\it heißen]]
+        [\bf A [\it heißen, tt]]
       ]
-      [\bf N, tier=preterminal [\it Kaffee]]
+      [\bf N [\it Kaffee, tt]]
       [AvP
-        [\bf Av, tier=preterminal [\it gerne]]
+        [\bf Av [\it gerne, tt]]
       ]
-      [\bf V, tier=preterminal [\it trinken]]
-      [\bf V, tier=preterminal [\it möchte]]
+      [\bf V [\it trinken, tt]]
+      [\bf V [\it möchte, tt]]
     ]
   \end{forest}
   \caption{Konstruktion einer syntaktischen Analyse, Schritt 2}
@@ -1758,22 +1758,22 @@ Die Struktur des Baumes verändert sich dadurch nicht.}
   \centering
   \begin{forest}
     [, phantom, s sep=0.5em
-      [\bf K, tier=preterminal [\it dass]]
+      [\bf K [\it dass, tt]]
       [NP
-        [\bf N, tier=preterminal [\it Frida]]
+        [\bf N [\it Frida, tt]]
       ]
-      [NP, calign=last
-        [Art [\it den, tier=terminal]]
+      [NP
+        [Art [\it den, tt]]
         [AP
-          [\bf A, tier=preterminal [\it heißen]]
+          [\bf A [\it heißen, tt]]
         ]
-        [\bf N, tier=preterminal [\it Kaffee]]
+        [\bf N [\it Kaffee, tt]]
       ]
       [AvP
-        [\bf Av, tier=preterminal [\it gerne]]
+        [\bf Av [\it gerne, tt]]
       ]
-      [\bf V, tier=preterminal [\it trinken]]
-      [\bf V, tier=preterminal [\it möchte, tier=terminal]]
+      [\bf V [\it trinken, tt]]
+      [\bf V [\it möchte, tt]]
     ]
   \end{forest}
   \caption{Konstruktion einer syntaktischen Analyse, Schritt 3}
@@ -1787,23 +1787,23 @@ Da sonst keine ersten Status im Satz vorkommen, saturiert \textit{trinken} offen
   \centering
   \begin{forest}
     [, phantom, s sep=0.5em
-      [\bf K, tier=preterminal [\it dass]]
+      [\bf K [\it dass, tt]]
       [NP
-        [\bf N, tier=preterminal [\it Frida]]
+        [\bf N [\it Frida, tt]]
       ]
-      [NP, calign=last
-        [Art [\it den, tier=terminal]]
+      [NP
+        [Art [\it den, tt]]
         [AP
-          [\bf A, tier=preterminal [\it heißen]]
+          [\bf A [\it heißen, tt]]
         ]
-        [\bf N, tier=preterminal [\it Kaffee]]
+        [\bf N [\it Kaffee, tt]]
       ]
       [AvP
-        [\bf Av, tier=preterminal [\it gerne]]
+        [\bf Av [\it gerne, tt]]
       ]
-      [\bf V, calign=last
-        [\bf V, tier=preterminal [\it trinken]]
-        [\bf V, tier=preterminal [\it möchte, tier=terminal]]
+      [\bf V
+        [\bf V [\it trinken, tt]]
+        [\bf V [\it möchte, tt]]
       ]
     ]
   \end{forest}
@@ -1819,24 +1819,24 @@ Wir können daher die VP in Abbildung~\ref{fig:konstruktionvonkonstituentenanaly
   \centering
   \begin{forest}
     [, phantom, s sep=0.5em
-      [\bf K, tier=preterminal [\it dass]]
-      [VP, calign=last, l sep=4em
+      [\bf K [\it dass, tt]]
+      [VP, l sep=4em
         [NP
-          [\bf N, tier=preterminal [\it Frida]]
+          [\bf N [\it Frida, tt]]
         ]
-        [NP, calign=last
-          [Art [\it den, tier=terminal]]
+        [NP
+          [Art [\it den, tt]]
           [AP
-            [\bf A, tier=preterminal [\it heißen]]
+            [\bf A [\it heißen, tt]]
           ]
-          [\bf N, tier=preterminal [\it Kaffee]]
+          [\bf N [\it Kaffee, tt]]
         ]
         [AvP
-          [\bf Av, tier=preterminal [\it gerne]]
+          [\bf Av [\it gerne, tt]]
         ]
-        [\bf V, calign=last
-          [\bf V, tier=preterminal [\it trinken]]
-          [\bf V, tier=preterminal [\it möchte, tier=terminal]]
+        [\bf V
+          [\bf V [\it trinken, tt]]
+          [\bf V [\it möchte, tt]]
         ]
       ]
     ]
@@ -1855,25 +1855,25 @@ Für jeden Knoten gibt es außerdem ein Schema, das ihn beschreibt.
 \begin{figure}[!htbp]
   \centering
   \begin{forest}
-    [SP, calign=first
-      [\bf K, tier=preterminal [\it dass]]
-      [VP, calign=last, l sep=4em
+    [SP
+      [\bf K [\it dass, tt]]
+      [VP, l sep=4em
         [NP
-          [\bf N, tier=preterminal [\it Frida]]
+          [\bf N [\it Frida, tt]]
         ]
-        [NP, calign=last
-          [Art [\it den, tier=terminal]]
+        [NP
+          [Art [\it den, tt]]
           [AP
-            [\bf A, tier=preterminal [\it heißen]]
+            [\bf A [\it heißen, tt]]
           ]
-          [\bf N, tier=preterminal [\it Kaffee]]
+          [\bf N [\it Kaffee, tt]]
         ]
         [AvP
-          [\bf Av, tier=preterminal [\it gerne]]
+          [\bf Av [\it gerne, tt]]
         ]
-        [\bf V, calign=last
-          [\bf V, tier=preterminal [\it trinken]]
-          [\bf V, tier=preterminal [\it möchte, tier=terminal]]
+        [\bf V
+          [\bf V [\it trinken, tt]]
+          [\bf V [\it möchte, tt]]
         ]
       ]
     ]

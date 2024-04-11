@@ -56,7 +56,7 @@
 \newcommand{\Sw}[1]{\begin{sideways}#1\end{sideways}}
 \newcommand{\Ast}{*}
 \definecolor{lg}{rgb}{.8,.8,.8}
-\newcommand{\Dim}{\cellcolor{lg}}
+\newcommand{\Dim}{\cellcolor{lsLightgray}}
 \newcommand{\Tidx}[1]{\ensuremath{_{\mathnormal{#1}}}}
 \newcommand{\Rollen}[1]{\ensuremath{\langle}#1\ensuremath{\rangle}}
 \newcommand{\Qc}[1]{\texttt{#1}}
@@ -83,14 +83,26 @@
 \newcommand{\PhPr}[1]{\ensuremath{\stackrel{\textnormal{#1\ }}{\Longrightarrow}}}
 \newcommand{\phopro}{\ensuremath{\Rightarrow}}
 
-\newcommand{\KTArr}[1]{\ding{226}~\textit{#1}~\ding{226}}
+%\newcommand{\KTArr}[1]{\ding{226}~\textit{#1}~\ding{226}}
+
+\newcommand{\KTArr}[1]{%
+  \raisebox{-4pt}{%
+    \begin{tikzpicture}
+      \node [inner sep=2] (name) at (0,0) {#1};
+      \draw [fill=lightgray, draw=none] (name.north west) to (name.north east) to 
+        ($(name.north east)!cos(45)!45:(name.south east)$) to
+        (name.south east) to (name.south west) to (name.north west);
+        \node [color=darkgray] (name2) at (0,0) {#1};
+      \end{tikzpicture}%
+    }%
+  }
 
 \newcommand{\VfTest}{\KTArr{VfTest}~}
 \newcommand{\PronTest}{\KTArr{PronTest}~}
 \newcommand{\KoorTest}{\KTArr{KoorTest}~}
-\newcommand{\onestar}{\textbf{[Einfach]}}
-\newcommand{\twostar}{\textbf{[Schwer]}}
-\newcommand{\tristar}{\textbf{[Transfer]}}
+\newcommand{\onestar}{\colorbox{lsLightgray}{\textsc{routine}}}
+\newcommand{\twostar}{\colorbox{lsLightgray}{\textsc{anspruch}}}
+\newcommand{\tristar}{\colorbox{lsLightgray}{\textsc{transfer}}}
 \newcommand{\RPr}{\ensuremath{\ll}}
 \newcommand{\RUn}{\ensuremath{\sim}}
 \newcommand{\REq}{\ensuremath{=}}
@@ -317,19 +329,21 @@ Die restlichen Werte werden gemäß der Position im Paradigma bei den konkret vo
   \end{tikzpicture}
 }
 
-\forestset{
-  Ephr/.style={draw, circle, thick, inner sep=1pt},
-  Eobl/.style={draw, rounded corners, inner sep=3pt},
-  Eopt/.style={draw, rounded corners, densely dashed, inner sep=3pt},
-  Erec/.style={draw, rounded corners, double, inner sep=3pt},
-  Eoptrec/.style={draw, rounded corners, densely dashed, double, inner sep=3pt},
-  Ehd/.style={rounded corners, fill=gray, inner sep=3pt,
+\tikzset{
+  %Ephr/.style={draw, circle, thick, inner sep=1pt},
+  Ephr/.style={fill=gray, inner sep=3pt,
+    delay={content=\whyte{##1}}},
+  Eobl/.style={draw, inner sep=3pt},
+  Eopt/.style={draw, densely dashed, inner sep=3pt},
+  Erec/.style={draw, double, inner sep=3pt},
+  Eoptrec/.style={draw, densely dashed, double, inner sep=3pt},
+  Ehd/.style={fill=gray, inner sep=3pt,
     delay={content=\whyte{##1}}
   },
   Emult/.style={for children={no edge}, for tree={l sep=0pt}},
   phrasenschema/.style={for tree={l sep=2em, s sep=2em}},
-  decide/.style={draw, chamfered rectangle, inner sep=2pt},
-  finall/.style={rounded corners, fill=gray, text=white},
+  decide/.style={draw, rectangle, inner sep=5pt},
+  finall/.style={rounded corners, fill=lsLightGray, text=black},
   intrme/.style={draw, rounded corners},
   yes/.style={edge label={node[near end, above, sloped, font=\scriptsize]{Ja}}},
   no/.style={edge label={node[near end, above, sloped, font=\scriptsize]{Nein}}},
@@ -337,6 +351,7 @@ Die restlichen Werte werden gemäß der Position im Paradigma bei den konkret vo
   ake/.style={
     tier=preterminal
     },
+  tt/.style={tier=terminal},
 }
 
 
