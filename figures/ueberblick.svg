@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 745 1053" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.8;">
+    <g id="Layer-1" serif:id="Layer 1">
+        <path id="path3009" d="M304.561,604.107C301.179,610.392 295.174,664.969 300.225,681.636C313.8,684.253 321.7,672.186 332.593,665.221C335.005,662.67 367.948,657.14 367.948,657.14C378.212,654.013 376.713,614.226 376.534,612.441C375.463,607.798 373.756,579.863 373.756,579.863C373.756,554.61 370.979,537.816 361.887,539.836C339.159,550.443 310.372,588.741 304.561,604.107Z" style="fill:none;stroke:black;stroke-width:3px;"/>
+        <path id="path3011" d="M398,579.611C397.464,582.289 392.056,605.16 393.959,615.976C394.816,621.884 408.102,632.644 420.223,642.745C424.029,646.214 416.457,664.539 417.698,666.484C422.957,673.968 456.589,677.091 465.175,685.172C467.701,679.616 469.216,625.068 463.155,604.865C461.64,599.309 453.559,566.605 412.647,542.361C400.525,534.785 393.959,555.872 398,579.611Z" style="fill:none;stroke:black;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;"/>
+        <path id="path3781" d="M300.52,702.849C290.197,628.989 360.541,647.69 394.465,651.332C448.003,645.776 468.711,666.989 464.67,692.243" style="fill:none;stroke:black;stroke-width:3px;"/>
+        <path id="path3783" d="M381.08,581.379C382.595,573.045 375.524,525.568 366.938,515.719C369.968,511.173 376.724,513.888 378.744,509.342C382.532,511.867 390.171,579.358 390.171,579.358C392.444,583.399 396.278,582.315 397.036,584.588C395.995,589.358 394.614,593.986 394.643,593.916C388.781,590.661 382.272,595.404 375.463,596.509C375.463,596.509 374.253,589.948 375.084,587.733C378.115,587.986 381.838,584.156 381.08,581.379Z" style="fill:none;stroke:black;stroke-width:3px;"/>
+        <path id="path3785" d="M358.099,504.607C359.172,508.269 366.749,515.529 366.749,515.529C368.074,512.688 377.86,512.436 377.923,510.542C379.817,509.91 383.1,489.328 381.964,487.245C380.133,484.467 377.734,486.235 377.292,486.677C375.65,487.056 375.903,494.758 372.62,495.768C370.273,496.392 363.607,495.123 360.183,497.283C358.036,498.799 357.594,503.66 358.099,504.607Z" style="fill:none;stroke:black;stroke-width:3px;"/>
+        <path id="path3789" d="M374.309,480.189C373.547,463.509 362.645,461.488 359.614,461.109C348.503,460.352 336.396,467.198 337.659,471.744C339.427,476.669 344.148,476.81 343.896,480.851C342.796,483.139 340.374,482.042 339.411,481.502C336.822,480.366 332.561,468.324 332.561,468.324L331.981,479.138C332.188,477.827 329.733,469.882 326.92,469.301C317.986,467.705 322.471,475.378 322.471,475.378C328.339,486.074 320.373,485.091 321.607,490.844C324.247,499.931 360.042,493.968 353.301,517.423C351.911,524.349 310.985,542.781 276.135,550.357" style="fill:none;stroke:black;stroke-width:3px;stroke-miterlimit:4;"/>
+        <path id="path3799" d="M276.277,616.481C275.014,627.846 282.843,634.159 282.843,634.159C278.802,649.564 286.126,703.354 286.883,708.91" style="fill:none;stroke:black;stroke-width:3px;stroke-miterlimit:4;"/>
+        <path id="path3801" d="M490.429,621.027C490.429,622.542 487.651,633.401 482.853,635.169C486.388,672.545 477.802,706.89 476.287,709.92" style="fill:none;stroke:black;stroke-width:3px;stroke-miterlimit:4;"/>
+        <path id="path3803" d="M519.218,554.862C502.803,550.316 446.992,527.588 434.871,510.415C406.839,473.04 455.326,458.14 455.074,409.905C446.235,368.489 419.466,354.852 394.465,355.609C320.976,356.367 336.128,403.339 329.31,410.41C326.027,418.997 307.844,434.654 308.854,440.21C308.932,441.659 309.851,442.445 311.168,442.963M315.193,443.958C319.664,444.885 324.246,446.324 320.534,455.761C320.428,459.308 328.285,461.346 328.108,451.342C329.687,451.342 332.156,458.987 332.156,458.987C332.156,458.987 334.347,451.522 335.357,451.648C336.949,452.418 355.253,444.656 366.563,445.982C373.565,447.706 375.174,456.165 379.116,455.576C379.004,431.341 354.387,426.965 315.139,443.932M311.869,442.849C321.868,428.469 329.607,417.124 341.51,414.627C353.412,412.13 374.931,418.448 383.214,421.112C399.066,425.529 386.466,468.783 382.412,487.644" style="fill:none;stroke:black;stroke-width:3px;stroke-miterlimit:4;"/>
+        <g transform="matrix(1,0,0,1,124.296,585.69)">
+            <g id="text3817">
+                <g>
+                    <text x="15.036px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Zw<tspan x="47.268px 57.996px 66.732px " y="0px 0px 0px ">erc</tspan>hfell</text>
+                    <text x="0px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Diaphragma)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,536.002,605.259)">
+            <g id="text3829">
+                <g>
+                    <text x="8.136px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Lunge</text>
+                    <text x="0px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Pulmo)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,521.065,506.207)">
+            <g id="text3837">
+                <g>
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Luröhr<tspan x="82.392px " y="0px ">e</tspan></text>
+                    <text x="0.096px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(T<tspan x="21.096px " y="24px ">r</tspan>achea)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,506.338,433.883)">
+            <g id="text3843">
+                <g>
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">K<tspan x="14.808px " y="0px ">e</tspan>hlkopf</text>
+                    <text x="2.352px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Lar<tspan x="42.432px " y="24px ">y</tspan>nx)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,131.14,377.212)">
+            <g id="text3849">
+                <g>
+                    <text x="8.448px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Nasenhöhle</text>
+                    <text x="0px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(<tspan x="6.912px " y="24px ">C</tspan>avitas nasi)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,143.818,471.714)">
+            <g id="text3855">
+                <g>
+                    <text x="6.66px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Mundhöhle</text>
+                    <text x="-1.716px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(<tspan x="5.196px " y="24px ">C</tspan>avitas oris</text>
+                    <text x="120.9px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,493.519,348.416)">
+            <g id="text3869">
+                <g>
+                    <text x="12.948px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Rachen</text>
+                    <text x="0px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(P<tspan x="20.424px " y="24px ">h</tspan>ar<tspan x="53.592px " y="24px ">y</tspan>nx)</text>
+                </g>
+            </g>
+        </g>
+        <path id="path4739" d="M270.967,380.198L335.228,428.049" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path4741" d="M380.814,468.076L486.014,357.783" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path4743" d="M372.475,504.212L500.722,440.489" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path4745" d="M378.591,531.453L508.187,513.273" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path4747" d="M423.531,585.085L525.775,607.261" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path4749" d="M314.102,647.643L265.555,593.674" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path4751" d="M343.583,459.191L284.707,475.283" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+    </g>
+</svg>

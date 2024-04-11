@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 745 1053" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.93333;">
+    <g id="Layer-1" serif:id="Layer 1">
+        <path id="path3789" d="M353.565,596.379C359.587,561.916 352.394,541.514 347.64,526.259C342.631,510.188 335.824,506.389 311.737,501.977C277.186,498.489 239.465,501.515 247.791,514.504C267.958,524.09 264.815,549.62 255.849,546.953C248.322,546.706 241.009,529.918 241.009,529.918C241.009,529.918 234.811,516.787 233.795,513.969L232.056,546.411C232.674,542.476 225.31,518.642 216.872,516.901C190.07,512.111 203.524,535.131 203.524,535.131C221.13,567.22 197.23,582.271 200.934,599.528C208.852,626.789 316.239,608.9 296.014,679.267" style="fill:none;stroke:black;stroke-width:3px;"/>
+        <path id="path3803" d="M224.041,358.228C214.192,383.986 159.644,430.959 162.674,447.626C162.968,453.091 174.141,455.414 179.769,456.944M190.19,462.02C197.08,466.308 204.967,475.842 197.714,494.28C197.394,504.919 220.966,511.034 220.437,481.022C225.172,481.022 232.58,503.957 232.58,503.957C232.58,503.957 236.395,485.698 239.425,486.077C246.129,501.712 301.871,460.965 335.802,464.941C356.808,470.115 366.633,496.922 373.46,493.726C378.962,437.489 287.61,412.822 190.559,460.967M179.435,456.973C209.432,413.834 224.933,378.369 260.641,370.878C296.348,363.387 360.903,382.34 385.755,390.333C433.309,403.584 395.511,533.345 383.347,589.928" style="fill:none;stroke:black;stroke-width:3px;"/>
+        <path id="path3890" d="M378.56,494.373L447.699,523.162" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path3892" d="M356.33,469.692L438.498,421.621" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path3894" d="M291.788,467.347L432.543,340.298" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path3896" d="M226.044,502.483L157.48,609.871" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path3900" d="M192.868,492.956L130.052,503.882" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path3904" d="M273.062,507.751L385.603,660.383" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <path id="path3906" d="M247.249,484.496L118.162,372.402" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <g transform="matrix(1,0,0,1,30.2449,332.501)">
+            <g id="text3908">
+                <g>
+                    <text x="29.376px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Zahndamm</text>
+                    <text x="0px" y="24px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(<tspan x="6.576px " y="24px ">A</tspan>lv<tspan x="41.328px 52.224px " y="24px 24px ">eo</tspan>li dentales)</text>
+                </g>
+            </g>
+        </g>
+        <g id="text3914" transform="matrix(1,0,0,1,431.081,329.331)">
+            <g transform="matrix(1,0,0,1,8.736,0)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">harter Gaumen</text>
+            </g>
+            <g transform="matrix(1,0,0,1,35.76,24)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Palatum)</text>
+            </g>
+        </g>
+        <g id="text3914-2" transform="matrix(1,0,0,1,451.345,416.836)">
+            <g transform="matrix(1,0,0,1,24.804,0)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Gaumensegel</text>
+            </g>
+            <g>
+                <g transform="matrix(1,0,0,1,-0.36,24)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(V</text>
+                </g>
+                <g transform="matrix(1,0,0,1,20.52,24)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">elum palatinum</text>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,174.816,24)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">)</text>
+            </g>
+        </g>
+        <g id="text3914-2-4" transform="matrix(1,0,0,1,465.747,518.638)">
+            <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Zäpfchen</text>
+            <g>
+                <g transform="matrix(1,0,0,1,9.924,24)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(</text>
+                </g>
+                <g transform="matrix(1,0,0,1,17.364,24)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Uvula)</text>
+                </g>
+            </g>
+        </g>
+        <g id="text3914-2-4-4" transform="matrix(1,0,0,1,397.494,654.605)">
+            <g transform="matrix(1,0,0,1,9.612,0)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Zunge</text>
+            </g>
+            <g transform="matrix(1,0,0,1,0,24)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Lingua)</text>
+            </g>
+        </g>
+        <g id="text3914-2-4-7" transform="matrix(1,0,0,1,67.7245,615.833)">
+            <g transform="matrix(1,0,0,1,10.212,0)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Zähne</text>
+            </g>
+            <g transform="matrix(1,0,0,1,0,24)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Dentes)</text>
+            </g>
+        </g>
+        <g id="text3914-2-4-2" transform="matrix(1,0,0,1,47.9634,501.359)">
+            <g>
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Lipp</text>
+                <g transform="matrix(1,0,0,1,44.256,0)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">en</text>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,0.372,24)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(Labia)</text>
+            </g>
+        </g>
+        <path id="path3906-7" d="M271.304,415.417L307.38,331.802" style="fill:none;stroke:black;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+        <g id="text3908-6" transform="matrix(1,0,0,1,243.996,292.378)">
+            <g transform="matrix(1,0,0,1,8.448,0)">
+                <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Nasenhöhle</text>
+            </g>
+            <g>
+                <g transform="matrix(1,0,0,1,0,24)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">(</text>
+                </g>
+                <g transform="matrix(1,0,0,1,6.912,24)">
+                    <text x="0px" y="0px" style="font-family:'LinLibertineO', 'Linux Libertine O';font-size:24px;">Cavitas nasi)</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

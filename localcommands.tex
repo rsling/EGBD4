@@ -1,0 +1,351 @@
+\newcommand*{\orcid}{}
+\renewcommand{\it}{\itshape}
+\renewcommand{\bf}{\bfseries}
+
+
+% By LSP.
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+
+% Mark for proof-reading/revision.
+\newcommand{\Dirty}{\marginpar{\hl{DIRTY!}}}
+
+
+% Fix line spacing in list environmens.
+\setlist{noitemsep}
+
+
+% Correct hyperref colors. The original ones would give you eye cancer.
+\hypersetup{
+  linkbordercolor  = {white}
+%  , linkcolor        = {lsMidDarkBlue}
+%  , anchorcolor      = {lsMidWine}
+%  , citecolor        = {lsDarkGreenOne}
+%  , menucolor        = {lsMidDarkBlue}
+%  , urlcolor         = {lsDarkOrange}
+%    , filecolor       = {}
+%    , runcolor        = {}
+}
+
+
+% Use a better mono font, ideal for code.
+% https://github.com/chrissimpkins/codeface/tree/master/fonts/inconsolata-g
+% \setmonofont{Inconsolata-g}
+
+
+% Use a math font that actually works! Requires unicode-math paackage.
+% https://github.com/khaledhosny/libertinus
+\setmathfont[Scale=MatchUppercase]{Libertinus Math}
+
+
+\newenvironment{listLileveli}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{listLilevelii}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{listLileveliii}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{listLileveliv}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{listLiileveli}{\begin{itemize}}{\end{itemize}}
+\newenvironment{listLiilevelii}{\begin{itemize}}{\end{itemize}}
+\newenvironment{listLiileveliii}{\begin{itemize}}{\end{itemize}}
+\newenvironment{listLiileveliv}{\begin{itemize}}{\end{itemize}} 
+
+
+% all sorts of shortcuts
+\newcommand{\HStrut}[1]{\rule{0pt}{#1pt}}
+\newcommand{\VStrut}[1]{\rule{#1pt}{0pt}}
+\newcommand{\Sw}[1]{\begin{sideways}#1\end{sideways}}
+\newcommand{\Ast}{*}
+\definecolor{lg}{rgb}{.8,.8,.8}
+\newcommand{\Dim}{\cellcolor{lg}}
+\newcommand{\Tidx}[1]{\ensuremath{_{\mathnormal{#1}}}}
+\newcommand{\Rollen}[1]{\ensuremath{\langle}#1\ensuremath{\rangle}}
+\newcommand{\Qc}[1]{\texttt{#1}}
+\newcommand{\acr}[1]{{#1}}
+\newcommand{\ak}[1]{#1\marginpar{\textcolor{textblue}{\footnotesize #1}}}
+\newcommand{\mar}[1]{\marginpar{\textcolor{textblue}{\footnotesize #1}}}
+\newcommand{\zB}{z.\thinspace{}B.~}
+\newcommand{\oA}{o.\thinspace{}ä.~}
+\newcommand{\idR}{i.\,d.\,R.\ }
+\newcommand{\BBel}[1]{\B[-5]{#1}}
+\newcommand{\Bewegtes}[1]{\ensuremath{_{\textrm{#1}}}}
+\newcommand{\ORi}{\Bewegtes{1}}
+\newcommand{\ORii}{\Bewegtes{2}}
+\newcommand{\ORiii}{\Bewegtes{3}}
+\newcommand{\ORiv}{\Bewegtes{4}}
+\newcommand{\ORv}{\Bewegtes{5}}
+\newcommand{\Spur}[1]{t\Sub{#1}}
+\newcommand{\Ti}{\Spur{1}}
+\newcommand{\Tii}{\Spur{2}}
+\newcommand{\Tiii}{\Spur{3}}
+\newcommand{\Tiv}{\Spur{4}}
+\newcommand{\Akz}{ˈ}
+\newcommand{\Nakz}{ˌ}
+\newcommand{\PhPr}[1]{\ensuremath{\stackrel{\textnormal{#1\ }}{\Longrightarrow}}}
+\newcommand{\phopro}{\ensuremath{\Rightarrow}}
+
+\newcommand{\KTArr}[1]{\ding{226}~\textit{#1}~\ding{226}}
+
+\newcommand{\VfTest}{\KTArr{VfTest}~}
+\newcommand{\PronTest}{\KTArr{PronTest}~}
+\newcommand{\KoorTest}{\KTArr{KoorTest}~}
+\newcommand{\onestar}{\textbf{[Einfach]}}
+\newcommand{\twostar}{\textbf{[Schwer]}}
+\newcommand{\tristar}{\textbf{[Transfer]}}
+\newcommand{\RPr}{\ensuremath{\ll}}
+\newcommand{\RUn}{\ensuremath{\sim}}
+\newcommand{\REq}{\ensuremath{=}}
+\newcommand{\Opsional}{★~}
+\newcommand{\Nono}{---}
+\newcommand{\Sub}[1]{\ensuremath{_{\text{#1}}}}
+\newcommand{\Up}[1]{\ensuremath{^{\text{#1}}}}
+\newcommand{\UpSub}[2]{\ensuremath{^{\text{#1}}_{\text{#2}}}}
+\newcommand{\TuBegin}{\ding{217}}
+\newcommand{\TuEnd}{}
+\newcommand{\Folgt}{\ding{217}}
+
+\newcommand*\circlearound[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+% boxes and stuff for definitions, axioms etc.
+\definecolor{textblue}{rgb}{0,0,.5}
+\definecolor{textred}{rgb}{.5,0,0}
+\definecolor{textgreen}{rgb}{0,.5,0}
+\definecolor{lightblue}{rgb}{.9,.9,1}
+\definecolor{lightgreen}{rgb}{.9,1,.9}
+\definecolor{lightred}{rgb}{1,.9,.9}
+\definecolor{lightyellow}{rgb}{1,1,.8}
+\definecolor{lightgray}{rgb}{.88,.88,.88}
+\definecolor{lsLightgray}{gray}{0.88}
+\definecolor{lsYellow}{cmyk}{0,0.25,1,0}
+
+\newcommand{\whyte}[1]{\textcolor{white}{#1}}
+
+% bookkeeping of own environments for definitions etc.
+\newlistof[chapter]{dgdef}{dgd}{Verzeichnis der Definitionen}
+\newlistof[chapter]{dgsatz}{dgs}{Verzeichnis der Sätze}
+\newlistof[chapter]{dgvertief}{dgv}{Verzeichnis der Vertiefungen}
+
+\newcounter{deskgram-ziel}
+\newcounter{deskgram-ex}
+\newcounter{deskgram-strsch}
+\newcounter{deskgram-wfilt}
+\newcounter{deskgram-pholproz}
+
+
+% Fix spacing between numbers and caption in list of figures etc.
+\makeatletter
+  \renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.2em}}
+  \renewcommand*\l@table{\@dottedtocline{1}{1em}{3.2em}}
+  \renewcommand*\l@dgdef{\@dottedtocline{1}{1em}{3.2em}}
+  \renewcommand*\l@dgsatz{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
+
+
+% NEW Vertiefung (non-floating)
+
+\newcommand{\tblsthickline}{{\color{lsLightGray}\rule{\textwidth}{1.2mm}}}
+
+\newenvironment{Sandwich}[1]
+  {
+    \par\vspace{5mm}\noindent\tblsthickline
+    {\par\vspace{3mm}\noindent\sffamily\large\bfseries#1\vspace{4mm}}
+  }
+  {\par\vspace{3mm}\noindent\tblsthickline\par\vspace{5mm}}
+
+
+\newenvironment{Vertiefung}[1]
+  { 
+    \refstepcounter{dgvertief}
+    \begin{Sandwich}{#1\hfill Vertiefung~\thechapter.\arabic{dgvertief}}
+  }
+  {\end{Sandwich}}
+
+
+% if not using hyperref, redefine this as empty:
+\newcommand{\Phantom}{\phantomsection}
+
+
+\newcommand{\Definition}[2]{
+  \refstepcounter{dgdef}
+  \tblsframebox{lsLightGray}{#1\hfill Definition~\thechapter.\arabic{dgdef}}{#2}
+}
+
+
+
+\newcommand{\Satz}[2]{
+  \refstepcounter{dgsatz}
+  \tblsframebox{lsLightGray}{#1\hfill Satz~\thechapter.\arabic{dgsatz}}{#2}
+}
+
+
+
+\newcommand{\Zusammenfassung}[1]{
+  \tblsframebox{lsLightGray}{Zusammenfassung von Abschnitt~\thesection}{#1}
+}
+
+
+
+\newcommand{\WFiltTree}[7][0mm]{%
+  \refstepcounter{deskgram-wfilt}
+  \tblsframebox{lsLightGray}{#2\hfill Wortklassenfilter~\arabic{deskgram-wfilt}}{
+    \label{#3}
+    \hspace{-5pt}\centering
+    \begin{tikzpicture}[baseline]
+    \node at (0,0) (Wort) [align=left] {#4};
+    \node [right=of Wort.east, text width=3.5cm, align=left] (Filter) {#5};
+    \node [above right=\baselineskip and 1cm of Filter.east] (Ja) {#6};
+    \node [below right=\baselineskip and 1cm of Filter.east] (Nein) {#7}; 
+    \path (Wort) edge [-{Latex[round]}] (Filter);
+    \path (Filter.east) edge [-{Latex[round]}] node [above,sloped] {Ja} (Ja.west);
+    \path (Filter.east) edge [-{Latex[round]}] node [below,sloped] {Nein} (Nein.west);
+  \end{tikzpicture}\vspace{#1}%
+  }
+}
+
+\newcommand{\strschemspace}{\hspace{1em}}
+\newcommand{\Phrasenschema}[2]{
+  \refstepcounter{deskgram-strsch}
+  \tblsframebox{lsLightGray}{#1\hfill Phrasenschema~\arabic{deskgram-strsch}}{
+    \centering
+    #2
+  }
+}
+
+
+
+% OLD "further reading"
+\newcommand{\WeitereLiteratur}[1]{
+  \tblslinebox{lsLightGray}{Weiterführende Literatur zu \thepart}{#1}
+}
+
+
+% Excercises.
+\newcounter{Exer}[chapter]
+
+\newcommand{\Uebung}[2][\twostar]{%
+  \par\medskip\refstepcounter{Exer}\noindent\textbf{Übung~\arabic{Exer}}~#1\ %
+  \ifthenelse{\equal{#2}{}}
+  {}
+  {(Lösung auf Seite \pageref{sol:#2})\ }
+}
+
+\newcommand{\Uebungen}{
+  \clearpage
+  \section*{Übungen zu Kapitel \thechapter}
+  \markboth{Übungen zu Kapitel \thechapter}{Übungen zu Kapitel \thechapter}
+  \setcounter{equation}{0}
+}
+
+\newcommand{\Loesungen}[2][\clearpage]{#1\section*{Zu Kapitel \ref{#2}}}
+\newcommand{\Loesung}[1]{\subsection*{Übung \ref{exc:#1} (Seite \pageref{exc:#1})}}
+
+\renewcommand{\Phantom}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Text used in more than one chapter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\DefWort}{Das (\textit{lexikalische}) \textit{Wort} ist eine Repräsentation von paradigmatisch zusammengehörenden Wortformen.
+Umgangssprachlich kann man von der Zusammenfassung aller möglichen Formen eines Wortes sprechen.
+Für das lexikalische Wort sind die Werte nur für diejenigen Merkmale spezifiziert, die in allen Wortformen des Paradigmas dieselben Werte haben.
+Die restlichen Werte werden gemäß der Position im Paradigma bei den konkret vorkommenden Wortformen des Wortes gesetzt.}
+
+\newcommand{\ThePhrasenExOne}{dass [[dem Jungen] [die Mutter] [ein Eis] [geschenkt hat]]}
+\newcommand{\ThePhrasenExTwo}{dass [[ein Eis] [die Mutter] [dem Jungen] [geschenkt hat]]}
+
+
+%%%%%%%%%%%%
+%%% TikZ %%%
+%%%%%%%%%%%%
+
+
+% Drawing sonority diagrams.
+
+\newcommand{\plo}{0}
+\newcommand{\fri}{0.5}
+\newcommand{\nas}{1}
+\newcommand{\liq}{1.5}
+\newcommand{\vok}{2}
+
+% Save text.
+\newcommand{\lastsaved}{}
+\newcommand{\textsave}[1]{\gdef\lastsaved{#1}#1}
+
+\newcommand{\SonDiag}[2][0]{%
+  \begin{tikzpicture}
+    \textsave{.}
+    \tikzset{
+      normalseg/.style={fill=white},
+      extrasyll/.style={circle, draw, fill=white},
+      sylljoint/.style={diamond, draw, fill=white}
+    }
+    \node at (0,\plo) {P};
+    \node at (0,\fri) {F};
+    \node at (0,\nas) {N};
+    \node at (0,\liq) {L};
+    \node at (0,\vok) {V};
+
+    % Draw the helper lines if required.
+    \ifthenelse{\equal{#1}{0}}{}{%
+      \foreach \y in {\plo, \fri, \nas, \liq,\vok} {%
+	\draw [dotted, |-|] (0.25, \y) -- (#1.75, \y);
+      }
+    }
+
+    \foreach [count=\x from 1, remember=\x as \lastx] \p / \y / \g in #2 {
+      \ifthenelse{\equal{\y}{-1}}{\textsave{.}}{%
+
+	% Draw the node, either plain, as Silbenbgelenk, or as extrasyllabic.
+        \ifthenelse{\equal{\g}{1}}{%
+	  \node (\x) [sylljoint] at (\x, \y) {\p};
+	}{%
+	  \ifthenelse{\equal{\g}{2}}{%
+	    \node (\x) [extrasyll] at (\x, \y) {\p};
+	  }{%
+	    \node (\x) [normalseg] at (\x, \y) {\p};
+	  }
+	}
+
+	% Draw the connection unless the previous node was not or was empty.
+	\ifthenelse{\NOT\equal{\lastsaved}{.}}{%
+	  \draw [->] (\lastx) to (\x);
+	}{}
+	\textsave{1}
+      }
+    }
+  \end{tikzpicture}
+}
+
+\forestset{
+  Ephr/.style={draw, circle, thick, inner sep=1pt},
+  Eobl/.style={draw, rounded corners, inner sep=3pt},
+  Eopt/.style={draw, rounded corners, densely dashed, inner sep=3pt},
+  Erec/.style={draw, rounded corners, double, inner sep=3pt},
+  Eoptrec/.style={draw, rounded corners, densely dashed, double, inner sep=3pt},
+  Ehd/.style={rounded corners, fill=gray, inner sep=3pt,
+    delay={content=\whyte{##1}}
+  },
+  Emult/.style={for children={no edge}, for tree={l sep=0pt}},
+  phrasenschema/.style={for tree={l sep=2em, s sep=2em}},
+  decide/.style={draw, chamfered rectangle, inner sep=2pt},
+  finall/.style={rounded corners, fill=gray, text=white},
+  intrme/.style={draw, rounded corners},
+  yes/.style={edge label={node[near end, above, sloped, font=\scriptsize]{Ja}}},
+  no/.style={edge label={node[near end, above, sloped, font=\scriptsize]{Nein}}},
+  sake/.style={tier=preterminal},
+  ake/.style={
+    tier=preterminal
+    },
+}
+
+
+
+%%%%%%%%%%
+% forest %
+%%%%%%%%%%
+
+\forestset{
+  narroof/.style={roof, inner xsep=-0.25em, rounded corners},
+}
+

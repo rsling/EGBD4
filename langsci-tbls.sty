@@ -1,0 +1,228 @@
+%%%%%%%%%%%%% Low-level commands %%%%%%%%%%%%%
+
+\usepackage{ifthen}
+\usepackage[framemethod=tikz]{mdframed}
+\mdfsetup{skipabove=2\baselineskip,
+          skipbelow=2\baselineskip,
+          frametitlefont=\sffamily\bfseries\Large,
+          needspace=4\baselineskip,
+          splittopskip=1.5\baselineskip}
+\mdfsetup{apptotikzsetting={\tikzset{mdfbackground/.append style={draw=none}}}}
+
+\newcommand{\langscisymbol}{book}
+\newcommand{\tblscolor}{black!12}
+\newcommand{\localstyle}{}
+
+\newlength{\tblslinewidth}
+\setlength{\tblslinewidth}{1.25mm}
+
+\newlength{\symbolwidth}
+\setlength{\symbolwidth}{6mm}
+\newlength{\logowidth}
+\setlength{\logowidth}{6mm}
+\newlength{\logolinewidth}
+\setlength{\logolinewidth}{3pt}
+\newlength{\abovetitlespacing}
+\setlength{\abovetitlespacing}{5mm}
+\newlength{\allmargins}
+\setlength{\allmargins}{5mm}
+
+\mdfdefinestyle{tblsfilledbox}{
+	hidealllines=true,
+	backgroundcolor=\tblscolor,
+	frametitleaboveskip=\abovetitlespacing,
+	frametitlebelowskip=0mm,
+	frametitlerule=false,
+	repeatframetitle=false,
+	innerleftmargin=\allmargins,
+	innerrightmargin=\allmargins,
+	innerbottommargin=\allmargins,
+	innertopmargin=\allmargins
+}
+
+\mdfdefinestyle{tblsfillediconbox}{
+	everyline=true,
+	ignorelastdescenders=true,
+	linewidth=0pt,
+	backgroundcolor=\tblscolor,
+	innerleftmargin=\allmargins,
+	innerrightmargin=\allmargins,
+	innerbottommargin=\allmargins,
+	innertopmargin=\allmargins,
+	frametitleaboveskip=\dimexpr\abovetitlespacing+0.6\symbolwidth,
+	frametitlebelowskip=0mm,
+	frametitlerule=false,
+	repeatframetitle=false,
+	firstextra={\useasboundingbox (P) rectangle (P);
+	            \node[xshift=\allmargins,
+	                  right,
+	                  draw=\tblscolor,
+	                  line width=\logolinewidth,
+	                  rectangle,
+	                  minimum size=\logowidth,
+	                  fill=white
+	                 ] at (P-|O) {\color{\tblscolor}
+	                              \includegraphics[width=\symbolwidth]{icons/tbls-\langscisymbol.pdf}
+	                             };
+	           }, % if environment is on multiple pages, print this on the first page.
+	singleextra={\useasboundingbox (P) rectangle (P);
+	             \node[xshift=\allmargins,
+	                   right,
+	                   draw=\tblscolor,
+	                   line width=\logolinewidth,
+	                   rectangle,
+	                   minimum size=\logowidth,
+	                   fill=white
+	                  ] at (P-|O) {\color{\tblscolor}
+	                               \includegraphics[width=\symbolwidth]{icons/tbls-\langscisymbol.pdf}
+	                               };
+	            } % if env. does not span multiple pages, print the same.
+}
+	
+
+\mdfdefinestyle{tblslinebox}{
+	leftline=false,
+	rightline=false,
+	frametitleaboveskip=\abovetitlespacing,
+	frametitlebelowskip=0mm,
+	frametitlerule=false,
+	repeatframetitle=false,
+	linewidth=\tblslinewidth,
+	linecolor=\tblscolor,
+	innerbottommargin=\allmargins,
+	innertopmargin=\allmargins,
+	innerleftmargin=0mm,
+	innerrightmargin=0	
+	}
+	
+	
+\mdfdefinestyle{tblsiconlinebox}{
+	leftline=false,
+	rightline=false,
+	frametitleaboveskip=\dimexpr\abovetitlespacing+0.6\symbolwidth,
+	frametitlebelowskip=0mm,
+	frametitlerule=false,
+	repeatframetitle=false,
+	linewidth=\tblslinewidth,
+	linecolor=\tblscolor,
+	innerbottommargin=\allmargins,
+	innertopmargin=\allmargins,
+	innerleftmargin=0mm,
+	innerrightmargin=0,
+	firstextra={\useasboundingbox (P) rectangle (P);
+	            \node[xshift=\allmargins,
+	                  right,
+	                  draw=\tblscolor,
+	                  line width=\logolinewidth,
+	                  rectangle,
+	                  minimum size=\logowidth,
+	                  fill=white] at (P-|O) {\color{\tblscolor}
+	                                         \includegraphics[width=\symbolwidth]{icons/tbls-\langscisymbol.pdf}
+	                                        };
+             }, % if environment is on multiple pages, print this on the first page.
+	singleextra={\useasboundingbox (P) rectangle (P);
+	             \node[xshift=\allmargins,
+	                   right,
+	                   draw=\tblscolor,
+	                   line width=\logolinewidth,
+	                   rectangle,
+	                   minimum size=\logowidth,
+	                   fill=white
+	                  ] at (P-|O) {\color{\tblscolor}
+	                               \includegraphics[width=\symbolwidth]{icons/tbls-\langscisymbol.pdf}
+	                              };
+	            } % if env. does not span multiple pages, print the same.
+	}
+	
+	
+\mdfdefinestyle{tblsframedbox}{
+	frametitleaboveskip=\abovetitlespacing,
+	frametitlebelowskip=0mm,
+	frametitlerule=false,
+	repeatframetitle=false,
+	linewidth=\tblslinewidth,
+	linecolor=\tblscolor,
+	innerbottommargin=\allmargins,
+	innertopmargin=\allmargins
+}	
+
+	
+\mdfdefinestyle{tblsiconframedbox}{
+	linewidth=\tblslinewidth,
+	linecolor=\tblscolor,
+	innerleftmargin=\allmargins,
+	innerrightmargin=\allmargins,
+	innerbottommargin=\allmargins,
+	frametitleaboveskip=2\abovetitlespacing,
+	frametitlebelowskip=5mm,
+	frametitlerule=false,
+	innertopmargin=0,
+	repeatframetitle=false,
+	firstextra={\useasboundingbox (P) rectangle (P);
+	            \node[xshift=\allmargins,
+	                  right,
+	                  draw=\tblscolor,
+	                  line width=\logolinewidth,
+	                  rectangle,
+	                  minimum size=\logowidth,
+	                  fill=white] at (P-|O) {\color{\tblscolor}
+	                                         \includegraphics[width=\symbolwidth]{icons/tbls-\langscisymbol.pdf}
+	                                        };
+             }, % if environment is on multiple pages, print this on the first page.
+	singleextra={\useasboundingbox (P) rectangle (P);
+	             \node[xshift=\allmargins,
+	                   right,
+	                   draw=\tblscolor,
+	                   line width=\logolinewidth,
+	                   rectangle,
+	                   minimum size=\logowidth,
+	                   fill=white
+	                  ] at (P-|O) {\color{\tblscolor}
+	                               \includegraphics[width=\symbolwidth]{icons/tbls-\langscisymbol.pdf}
+	                              };
+	            } % if env. does not span multiple pages, print the same.
+}
+
+
+
+%%%%%%%%%%%%% Higher-level commands %%%%%%%%%%%%%
+
+
+% [icon]{color}{title}{text}
+\newcommand{\tblscolorbox}[4][]{
+  \ifthenelse{\equal{#1}{}}
+    {\renewcommand{\localstyle}{tblsfilledbox}}
+    {\renewcommand{\localstyle}{tblsfillediconbox}
+     \renewcommand{\langscisymbol}{#1}}
+  \renewcommand{\tblscolor}{#2}
+  \begin{mdframed}[style=\localstyle,frametitle={#3}]
+    #4
+  \end{mdframed}
+}
+
+
+% [icon]{color}{title}{text}
+\newcommand{\tblssandwich}[4][]{
+  \ifthenelse{\equal{#1}{}}
+    {\renewcommand{\localstyle}{tblslinebox}}
+    {\renewcommand{\localstyle}{tblsiconlinebox}
+     \renewcommand{\langscisymbol}{#1}}
+  \renewcommand{\tblscolor}{#2}
+  \begin{mdframed}[style=\localstyle,frametitle={#3}]
+    #4
+  \end{mdframed}
+}
+
+
+% [icon]{color}{title}{content}
+\newcommand{\tblsframebox}[4][]{
+  \ifthenelse{\equal{#1}{}}
+    {\renewcommand{\localstyle}{tblsframedbox}}
+    {\renewcommand{\localstyle}{tblsiconframedbox}
+     \renewcommand{\langscisymbol}{#1}}
+  \renewcommand{\tblscolor}{#2}
+  \begin{mdframed}[style=\localstyle,frametitle={#3}]
+    #4
+  \end{mdframed}
+}
+

@@ -1,0 +1,51 @@
+\documentclass[output=book,
+  colorlinks,citecolor=brown,
+  booklanguage=german,
+  ]{langscibook}
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\addbibresource{localbibliography.bib}
+
+\begin{document}
+
+\input{localcommands.tex}
+
+\maketitle
+
+\frontmatter
+
+\currentpdfbookmark{Contents}{name}
+{\sloppy\tableofcontents}
+\include{chapters/00Vorwort}
+\include{chapters/00Danksagungen}
+% \include{chapters/99abkuerzungen}
+\mainmatter
+
+\include{chapters/01Grammatik}
+\include{chapters/02Deutschunterricht}
+\include{chapters/03Grundlagen}
+\include{chapters/04Woerter}
+\include{chapters/05Laute}
+\include{chapters/06Lautsystem}
+\include{chapters/07Silben}
+\include{chapters/07Silben}
+\include{chapters/08Staemme}
+\include{chapters/09Wortbildung}
+\include{chapters/10Nomina}
+\include{chapters/11Verben}
+\include{chapters/12Konstituenten}
+\include{chapters/13Phrasen}
+\include{chapters/14Saetze}
+\include{chapters/15Passiv}
+\include{chapters/16Funktionen}
+\include{chapters/17Statusrektion}
+\include{chapters/18Buchstaben}
+\include{chapters/19Schreibungen}
+
+% \input{localseealso.tex}
+
+\input{backmatter.tex}
+
+\end{document}
