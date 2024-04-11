@@ -1,65 +1,65 @@
 # specify thh main file and all the files that you are including
-SOURCE=  main.tex $(wildcard local*.tex) $(wildcard chapters/*.tex) 
+SOURCE=  egbd4.tex $(wildcard local*.tex) $(wildcard chapters/*.tex) 
 
 # specify your main target here:
-pdf: main.bbl main.pdf  #by the time main.pdf, bib assures there is a newer aux file
+pdf: egbd4.bbl egbd4.pdf  #by the time main.pdf, bib assures there is a newer aux file
  
-complete: index main.pdf
+complete: index egbd4.pdf
 
-index:  main.snd
+index:  egbd4.snd
  
-main.pdf: main.aux
-	xelatex main 
+egbd4.pdf: egbd4.aux
+	xelatex egbd4 
 
-main.aux: $(SOURCE)
-	xelatex -no-pdf main 
+egbd4.aux: $(SOURCE)
+	xelatex -no-pdf egbd4 
 
 #create only the book
-main.bbl:  $(SOURCE) localbibliography.bib  
-	xelatex -no-pdf main 
-	biber   main 
+egbd4.bbl:  $(SOURCE) localbibliography.bib  
+	xelatex -no-pdf egbd4 
+	biber   egbd4 
 
 
-main.snd: main.bbl
-	touch main.adx main.sdx main.ldx
-	sed -i s/.*\\emph.*// main.adx #remove titles which biblatex puts into the name index
-	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.sdx # ordering of references to footnotes
-	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.adx
-	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
-	sed -i 's/.*Office.*//' main.adx
-	sed -i 's/.*Team.*//' main.adx
-	sed -i 's/.*Bureau.*//' main.adx
-	sed -i 's/.*Organisation.*//' main.adx
-	sed -i 's/.*Organization.*//' main.adx
-	sed -i 's/.*Embassy.*//' main.adx
-	sed -i 's/.*Association.*//' main.adx
-	sed -i 's/.*Commission.*//' main.adx
-	sed -i 's/.*committee.*//' main.adx
-	sed -i 's/.*government.*//' main.adx
-	sed -i 's/\\MakeCapital//' main.adx
+egbd4.snd: egbd4.bbl
+	touch egbd4.adx egbd4.sdx egbd4.ldx
+	sed -i s/.*\\emph.*// egbd4.adx #remove titles which biblatex puts into the name index
+	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' egbd4.sdx # ordering of references to footnotes
+	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' egbd4.adx
+	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' egbd4.ldx
+	sed -i 's/.*Office.*//' egbd4.adx
+	sed -i 's/.*Team.*//' egbd4.adx
+	sed -i 's/.*Bureau.*//' egbd4.adx
+	sed -i 's/.*Organisation.*//' egbd4.adx
+	sed -i 's/.*Organization.*//' egbd4.adx
+	sed -i 's/.*Embassy.*//' egbd4.adx
+	sed -i 's/.*Association.*//' egbd4.adx
+	sed -i 's/.*Commission.*//' egbd4.adx
+	sed -i 's/.*committee.*//' egbd4.adx
+	sed -i 's/.*government.*//' egbd4.adx
+	sed -i 's/\\MakeCapital//' egbd4.adx
 # 	python3 fixindex.py
-# 	mv mainmod.adx main.adx
-	makeindex -o main.and main.adx
-	grep -o  ", [^0-9, \\]*," main.and
-	makeindex -o main.lnd main.ldx
-	makeindex -o main.snd main.sdx 
+# 	mv mainmod.adx egbd4.adx
+	makeindex -o egbd4.and egbd4.adx
+	grep -o  ", [^0-9, \\]*," egbd4.and
+	makeindex -o egbd4.lnd egbd4.ldx
+	makeindex -o egbd4.snd egbd4.sdx 
 	echo "check for doublets in name index"
-	grep -o  ", [^0-9, \\}]*," main.and|sed "s/, //" | sed "s/,\$//"
-	xelatex main 
+	grep -o  ", [^0-9, \\}]*," egbd4.and|sed "s/, //" | sed "s/,\$//"
+	xelatex egbd4 
  
 
 #create a png of the cover
 cover: FORCE
-	convert main.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  cover.png
+	convert egbd4.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  cover.png
 	cp cover.png googlebooks_frontcover.png
 	convert -geometry 50x50% cover.png covertwitter.png
-	convert main.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  -resize x495 coveromp.png
+	convert egbd4.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  -resize x495 coveromp.png
 	display cover.png
 
 openreview: openreview.pdf
 	
 openreview.pdf: 
-	pdftk main.pdf multistamp orstamp.pdf output openreview.pdf 
+	pdftk egbd4.pdf multistamp orstamp.pdf output openreview.pdf 
 
 proofreading: proofreading.pdf
 	
@@ -96,7 +96,7 @@ paperhive:  proofreading.pdf versions.json README.md
 	git push origin gh-pages
 	sleep 3
 	curl -X POST 'https://paperhive.org/api/document-items/remote?type=langsci&id='`basename $(pwd)`
-	git checkout main
+	git checkout egbd4
 	git commit -m 'new README' README.md
 	git push
 		
@@ -108,21 +108,21 @@ firstedition:
 	git add first_edition.pdf 
 	git commit -am 'provide first edition'
 	git push origin gh-pages 
-	git checkout main 
+	git checkout egbd4 
 	curl -X POST 'https://paperhive.org/api/document-items/remote?type=langsci&id='`cat ID`
 	
 	
 proofreading.pdf:
-	pdftk main.pdf multistamp prstamp.pdf output proofreading.pdf 
+	pdftk egbd4.pdf multistamp prstamp.pdf output proofreading.pdf 
 	
 	
 chop:  
-	egrep -o "\{[0-9]+\}\{chapter\.[0-9]+\}" main.toc| egrep -o "[0-9]+\}\{chapter"|egrep -o [0-9]+ > cuts.txt
-	egrep -o "\{chapter\}\{Index\}\{[0-9]+\}\{section\*\.[0-9]+\}" main.toc| grep -o "\..*"|egrep -o [0-9]+ >> cuts.txt
-	bash chopchapters.sh `grep "mainmatter starts" main.log|grep -o "[0-9]*" $1 $2`
+	egrep -o "\{[0-9]+\}\{chapter\.[0-9]+\}" egbd4.toc| egrep -o "[0-9]+\}\{chapter"|egrep -o [0-9]+ > cuts.txt
+	egrep -o "\{chapter\}\{Index\}\{[0-9]+\}\{section\*\.[0-9]+\}" egbd4.toc| grep -o "\..*"|egrep -o [0-9]+ >> cuts.txt
+	bash chopchapters.sh `grep "mainmatter starts" egbd4.log|grep -o "[0-9]*" $1 $2`
 	
 chapternames:
-	egrep -o "\{chapter\}\{\\\numberline \{[0-9]+}[A-Z][^\}]+\}" main.toc | egrep -o "[[:upper:]][^\}]+" > chapternames	
+	egrep -o "\{chapter\}\{\\\numberline \{[0-9]+}[A-Z][^\}]+\}" egbd4.toc | egrep -o "[[:upper:]][^\}]+" > chapternames	
 	
 #housekeeping	
 clean:
@@ -131,7 +131,7 @@ clean:
 	*.log *.blg *.ilg \
 	*.aux *.toc *.cut *.out *.tpm *.bbl *-blx.bib *_tmp.bib *bcf \
 	*.glg *.glo *.gls *.wrd *.wdv *.xdv *.mw *.clr *.pgs \
-	main.run.xml \
+	egbd4.run.xml \
 	chapters/*aux chapters/*~ chapters/*.bak chapters/*.backup \
 	langsci/*/*aux langsci/*/*~ langsci/*/*.bak langsci/*/*.backup
 
@@ -139,7 +139,7 @@ realclean: clean
 	rm -f *.dvi *.ps *.pdf
 
 chapterlist:
-	grep chapter main.toc|sed "s/.*numberline {[0-9]\+}\(.*\).newline.*/\\1/" 
+	grep chapter egbd4.toc|sed "s/.*numberline {[0-9]\+}\(.*\).newline.*/\\1/" 
 
 
 barechapters:
